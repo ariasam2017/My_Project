@@ -17,7 +17,7 @@ public class Jalase3 {
         System.out.println(v);
     NumberOfDay(34);
         System.out.println("Please Enter Your Year");
-        Integer count= Input();             //دریافت ورودی از کاربر
+        Integer count= Input();             //Input User
         if (count>18){
             System.out.println("شما مجاز به رای دادن هستید");
         } else if (count<=18) {
