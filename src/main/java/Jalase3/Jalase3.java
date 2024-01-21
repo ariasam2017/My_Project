@@ -16,7 +16,7 @@ public class Jalase3 {
     public static void Avrage(Integer a,Integer b){        //Avrage Method
         System.out.println((a+b)/2);
     }
-    public static void NumberOfDay(Integer number){
+    public static void NumberOfDay(Integer number){        //Year of Birth
         int yer=1402;
         int cout=number-yer;
         System.out.println("سال تولد شما:"+cout);
