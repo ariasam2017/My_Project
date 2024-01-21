@@ -16,16 +16,28 @@ public class Jalase3 {
        int v=(y/5);
         System.out.println(v);
     NumberOfDay(34);
-        AgeCalculation();
+     //   AgeCalculation();
+        ZojoFard();
+
+    }
+
+    private static void ZojoFard() throws IOException {
+        System.out.println("Please Enter Number");
+        Integer number=Input();
+        if ((number/2)==0){
+            System.out.println("Evan");
+        }else {
+            System.out.println("Odd");
+        }
     }
 
     private static void AgeCalculation() throws IOException {      //AgeCalculation
         System.out.println("Please Enter Your Year");
         Integer count= Input();
         if (count>18){
-            System.out.println("شما مجاز به رای دادن هستید");
+            System.out.println(true);
         } else if (count<=18) {
-            System.out.println("شما نمیتوانید رای دهید ");
+            System.out.println(false);
         }
     }
 
