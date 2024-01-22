@@ -17,18 +17,7 @@ public class Jalase3 {
         System.out.println(v);
     NumberOfDay(34);
      //   AgeCalculation();
-        ZojoFard();
 
-    }
-
-    private static void ZojoFard() throws IOException {
-        System.out.println("Please Enter Number");
-        Integer number=Input();
-        if ((number/2)==0){
-            System.out.println("Evan");
-        }else {
-            System.out.println("Odd");
-        }
     }
 
     private static void AgeCalculation() throws IOException {      //AgeCalculation
