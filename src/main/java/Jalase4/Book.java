@@ -1,12 +1,15 @@
 package Jalase4;
 
-
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.nio.Buffer;
 
 public class Book {
-    public String title="Name1";
-    public String author="Name2";
-    public  Integer press=12;
-    public Integer releaseDate=1402;
+    public String title;
+    public String author;
+    public  Integer press;
+    public Integer releaseDate;
 
     public String getTitle() {
         return title;
@@ -40,23 +43,31 @@ public class Book {
         this.releaseDate = releaseDate;
     }
 
-    public Book(String title) {
-        this.title=title;
-    }
+
     public  Book(String title,String author){
         this.title=title;
         this.author=author;
     }
-    public Book (){             //Default Constructor
+    public Book (String title) throws IOException {             //Default Constructor
+        System.out.println("Salam");
+        BufferedReader reader=new BufferedReader(new InputStreamReader(System.in));
+        String input = reader.readLine();
+        if (this.title==title){
+        System.out.println("Book Found");
+    }
+    else {
+        System.out.println("Book Not Found");
+    }
 
     }
 
-
+    public static void main(String[] args) throws IOException {
+        Book book=new Book("Salam1");
+    }
 
     public void displayInfo(){
         System.out.println("The Book Title is :" +getTitle() + "The author is : "
                 + getAuthor() + "The press is :" +getAuthor()+ "The releaseDate is "+ getReleaseDate());
     }
-
 
 }
