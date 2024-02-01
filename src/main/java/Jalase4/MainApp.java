@@ -5,8 +5,13 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 
 public class MainApp {
-    public static void main(String[] args) throws IOException {
-        System.out.println( "Result "+factorial(5));
+    public static void main(String[] args)throws IOException {
+       // System.out.println( "Result "+factorial(5));
+        Book book=new Book();
+       // book.plusCount();
+      //  book.printSaleCount();
+        Ebook ebook=new Ebook();
+       ebook.displayInfo();
 
 
     }

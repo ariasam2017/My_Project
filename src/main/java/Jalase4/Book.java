@@ -10,6 +10,8 @@ public class Book {
     public String author;
     public  Integer press;
     public Integer releaseDate;
+    public static Integer saleCount;
+    public Integer noneStatic=0;
 
     public String getTitle() {
         return title;
@@ -43,31 +45,42 @@ public class Book {
         this.releaseDate = releaseDate;
     }
 
-
-    public  Book(String title,String author){
-        this.title=title;
-        this.author=author;
+    static {
+        saleCount=0;
     }
-    public Book (String title) throws IOException {             //Default Constructor
-        System.out.println("Salam");
-        BufferedReader reader=new BufferedReader(new InputStreamReader(System.in));
-        String input = reader.readLine();
-        if (this.title==title){
-        System.out.println("Book Found");
-    }
-    else {
-        System.out.println("Book Not Found");
-    }
+//    public void plusCount(){
+//    saleCount++;
+//    noneStatic++;
+//    }
+    public void printSaleCount(){
+        System.out.println("SaleCount is "+ saleCount);
+        System.out.println("noneStatic is "+ noneStatic);
 
     }
 
-    public static void main(String[] args) throws IOException {
-        Book book=new Book("Salam1");
-    }
+//    public  Book(String title,String author){
+//        this.title=title;
+//        this.author=author;
+//    }
+//    public Book (String title) throws IOException {             //Default Constructor
+//       System.out.println("Salam");
+//        BufferedReader reader=new BufferedReader(new InputStreamReader(System.in));
+//        String input = reader.readLine();
+//        if (this.title==title){
+//        System.out.println("Book Found");
+//    }
+//    else {
+//        System.out.println("Book Not Found");
+//    }
+//    }
+
 
     public void displayInfo(){
-        System.out.println("The Book Title is :" +getTitle() + "The author is : "
-                + getAuthor() + "The press is :" +getAuthor()+ "The releaseDate is "+ getReleaseDate());
+        System.out.println("The Book Title is :" +title + "The author is : "
+                + author + "The press is :" +press+
+                "The releaseDate is "+ releaseDate);
     }
-
+    public void printPaper(){
+        System.out.println("Print Old Paper");
+    }
 }
