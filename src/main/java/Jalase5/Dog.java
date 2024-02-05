@@ -13,7 +13,7 @@ private String voice;
         this.voice = voice;
     }
 
-    public String voice(){
-        return this.voice();
+    public void voice(){
+        System.out.println("سگ پارس میکند");
     }
 }

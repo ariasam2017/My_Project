@@ -13,5 +13,16 @@ public class MainApp {
 
 //        Dog dog=new Dog();
 //        dog.setVoice("Pars Kardan");
-        }
+//        Printer printer=new Printer(50,true);
+//        System.out.println("page Count "+ printer.getPagePrinted());
+//        int pagePrinted= printer.printPages(4);
+//        System.out.println("page Count "+ printer.getPagePrinted());
+
+//        Cat cat=new Cat();
+//        Dog dog=new Dog();
+//        cat.grab();
+//        dog.voice();
+        Pejo pejo=new Pejo();
+        pejo.GearShift("به صورت اوتومات دنده در حال تغییر است");
+    }
     }

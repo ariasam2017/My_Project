@@ -1,8 +1,16 @@
 package Jalase5;
 
-public class Car {
+public abstract class Car {
     private String color;
     private int speed;
+    private String GearShift;
+
+    public void setGearShift(){
+
+    }
+    public String carSped(String spek){
+        return spek;
+    }
 
     public String getColor() {
         return color;
@@ -18,5 +26,9 @@ public class Car {
 
     public void setSpeed(int speed) {
         this.speed = speed;
+    }
+
+    public  void setGearShift(String gearShift){
+
     }
 }

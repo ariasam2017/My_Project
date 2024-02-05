@@ -1,12 +1,16 @@
 package Jalase5;
 
-public class Pejo extends Car{
+public class Pejo extends Car {
+    private String color;
+    private String model;
 
-    public Pejo() {
-        Car car=new Car();
-        car.setSpeed(200);
+    public void GearShift(String shift) {
+        System.out.println(shift);
     }
-    public void gearChange(){
+
+    public void gearChange() {
         System.out.println("تغییر دنده به صورت اتوماتیک انجام می شود ");
     }
+
+
 }

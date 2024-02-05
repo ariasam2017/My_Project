@@ -5,31 +5,46 @@ public class Printer {
     private int pagePrinted;
     private boolean duplex;
 
-    public int getTonerLevel() {
-        return tonerLevel;
-    }
+    public void setTonerLevel(Integer tonerLevel){
+        this.tonerLevel=tonerLevel;
 
-    public void setTonerLevel(int tonerLevel) {
-        this.tonerLevel = tonerLevel;
     }
+    public Printer(int tonerLevel,boolean duplex){
+        pagePrinted=0;
+        tonerLevel=100;
+        if (tonerLevel>-1&&tonerLevel<=100){
+            this.tonerLevel=tonerLevel;
+        }
+        this.duplex=duplex;
+    }
+    public int printPages(int pageCount){
+        int pagesToPrint=pageCount;
+        if (duplex){
+            pagesToPrint=pageCount/2;
 
-    public int getPagePrinted() {
+        }
+        this.pagePrinted+=pagesToPrint;
         return pagePrinted;
     }
 
-    public void setPagePrinted(int pagePrinted) {
-        this.pagePrinted = pagePrinted;
+    public int getTonerLevel() {
+        return this.tonerLevel;
     }
 
-    public boolean isDuplex() {
-        return duplex;
+    public int getPagePrinted() {
+        return this.pagePrinted;
     }
 
-    public void setDuplex(boolean duplex) {
-        this.duplex = duplex;
-    }
-    public void showTonerLevel(int tonerLevel){
-        Printer printer=new Printer();
+    public int addTonerLevel(int addToner){
+        if (tonerLevel>0&&tonerLevel<100){
+            if (this.tonerLevel+addToner>100){
+                System.out.println("Toner is Full");
+            }
+            this.tonerLevel+=addToner;
+            return tonerLevel;
 
+        }else {
+            return -1;
+        }
     }
 }
