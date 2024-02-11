@@ -5,8 +5,8 @@ public class Book {
     private String author;
     private String text;
 
-    public void setter(String name){
-        this.name=name;
-    }
-    
+//    public void setter(String name){
+//        this.name=name;
+//    }
+
 }
