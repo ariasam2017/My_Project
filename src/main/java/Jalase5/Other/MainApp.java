@@ -1,4 +1,4 @@
-package Jalase5;
+package Jalase5.Other;
 
 public class MainApp {
     public static void main(String[] args) {

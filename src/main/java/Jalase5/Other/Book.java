@@ -1,4 +1,4 @@
-package Jalase5;
+package Jalase5.Other;
 
 public class Book {
     private String name;

@@ -1,4 +1,4 @@
-package Jalase5;
+package Jalase5.Other;
 
 public class Student {
     private int studentId;
