@@ -6,5 +6,6 @@ public class Main {
         fish.Swim();
         Bird bird=new Bird();
         bird.Fly();
+        System.out.println();
     }
 }
