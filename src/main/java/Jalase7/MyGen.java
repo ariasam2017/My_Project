@@ -1,6 +1,9 @@
 package Jalase7;
 
-public class MyGen<E> {
+import java.util.ArrayList;
+import java.util.List;
+
+public class MyGen <E>{
     E element;
 
     public void setElement(E element) {
@@ -8,15 +11,17 @@ public class MyGen<E> {
     }
     public void print(){
         System.out.println(element);
-
     }
-    public E getElement(){
+
+    public E getElement() {
         return element;
     }
 
     public static void main(String[] args) {
         MyGen<String> myGen=new MyGen<>();
-        myGen.setElement("111");
+        myGen.setElement("Amirhossein");
         myGen.print();
-     }
+       // String m=myGen.getElement();
+        List myInterfaceList=new ArrayList();
+    }
 }
